@@ -1,0 +1,63 @@
+@API_URL = http://localhost:3001/authentication
+###
+
+
+//register for repoter
+###
+POST {{API_URL}}/register
+Content-Type: application/json
+
+{                           
+    "user_name":"testuser2",
+    "position":2,
+    "password":"testuser2"
+}
+
+//register for admin
+###
+POST {{API_URL}}/register
+Content-Type: application/json
+
+{                           
+    "user_name":"admin2",
+    "position":1,
+    "password":"admin1"
+}
+
+
+//login for admin
+###
+POST {{API_URL}}/login
+Content-Type: application/json
+
+{                           
+    "user_name":"admin2",
+    "password":"admin1"
+
+}
+
+//login for repoter
+###
+POST {{API_URL}}/login
+Content-Type: application/json
+
+{                           
+    "user_name":"testuser2",
+    "password":"testuser2"
+
+}
+
+
+
+//login for superadmin
+###
+POST {{API_URL}}/login
+Content-Type: application/json
+
+{                           
+    "user_name":"chukarupaiya@gmail.com",
+    "password":"Karupaiya73"
+
+}
+
+

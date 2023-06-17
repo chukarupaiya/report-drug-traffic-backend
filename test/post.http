@@ -1,0 +1,46 @@
+@API_URL = http://localhost:3001/post
+
+
+
+//fetch all post
+###
+POST {{API_URL}}/fetch/all
+Content-Type: application/json
+
+{                           
+    
+}
+
+
+//fetch all post by id 
+###
+POST {{API_URL}}/fetch/byid
+Content-Type: application/json
+
+{                           
+    "user_id":2
+}
+
+
+
+//add a post 
+###
+POST {{API_URL}}/add
+Content-Type: application/json
+
+{                           
+    "user_id":2,
+    "like":0,
+    "address":"testuser3",
+    "date":"may 2023"
+}
+
+//update a post
+###
+POST {{API_URL}}/update
+Content-Type: application/json
+
+{                           
+    "post_id":1,
+    "like":3
+}

@@ -1,0 +1,24 @@
+@API_URL = http://localhost:3001/location
+
+
+
+//fetch all post
+###
+POST {{API_URL}}/fetch/all
+Content-Type: application/json
+
+{                           
+    
+}
+
+
+//add a post 
+###
+POST {{API_URL}}/add
+Content-Type: application/json
+
+{                           
+    "latitude":1,
+    "longitude":1
+}
+
